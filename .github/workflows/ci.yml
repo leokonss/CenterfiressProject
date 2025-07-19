@@ -1,8 +1,8 @@
 name: CI
 
 on:
-#  push:
-#  schedule:
+  push:
+  schedule:
     - cron: '0 12-21/3,0 * * *'
 
 jobs:
@@ -24,17 +24,28 @@ jobs:
       - name: Install Chrome
         run: sudo apt-get install google-chrome-stable
 
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
+      - name: Run tests
+        run: mvn clean test
 
-      - name: Attach screenshots and reports
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin
+
+      - name: Attach failure reports + screenshots
         uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: screenshots-and-report
+          name: failure-reports
           path: |
             screenshots
             target/surefire-reports/emailable-report.html
+            target/site/allure-maven-plugin
+            target/allure-results
 
       - name: Attach reports only
         uses: actions/upload-artifact@v4
@@ -60,5 +71,29 @@ jobs:
           body: "Test run failed. Please check the attached reports.\n\nGitHub Actions URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           to: ${{ secrets.EMAIL_ADDRESS }}
           from: GitHub Actions
-          attachments: target/surefire-reports/emailable-report.html
+          attachments: |
+            target/surefire-reports/emailable-report.html
+            target/site/allure-maven-plugin/index.html
 
+  publish-report:
+    name: 'Publish Allure to GitHub Pages'
+    runs-on: ubuntu-latest
+    needs: test
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download Allure HTML report from previous job
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
+          publish_branch: gh-pages
