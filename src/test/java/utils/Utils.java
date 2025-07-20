@@ -14,8 +14,7 @@ import java.util.Date;
 public class Utils {
     private static final ChromeOptions chromeOptions = new ChromeOptions();
     public static WebDriver createDriver() {
-        //chromeOptions.addArguments("--headless", "--window-size=1920,1080");
-        chromeOptions.addArguments("--window-size=1920,1080");
+        chromeOptions.addArguments("--headless", "--window-size=1920,1080");
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.addArguments("--disable-extensions");
