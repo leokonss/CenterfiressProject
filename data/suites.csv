@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jul 26 15:21:12 UTC 2025","Sat Jul 26 15:21:28 UTC 2025","15830","Surefire suite","Surefire test","tests.EventTest","tests.EventTest","testBasicPistolShootingCourseTickets","Verify that tickets are not available for 'Basic Pistol Shooting Course'",""

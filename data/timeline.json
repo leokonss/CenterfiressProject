@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "pkrvmpptgkbjq6m",
+    "children" : [ {
+      "name" : "2224@pkrvmpptgkbjq6m.main(1)",
+      "children" : [ {
+        "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+        "uid" : "d2cbb00a93e2809f",
+        "parentUid" : "57f50ce3fdfda4fd224c0f51cb00e388",
+        "status" : "passed",
+        "time" : {
+          "start" : 1753543272748,
+          "stop" : 1753543288578,
+          "duration" : 15830
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57f50ce3fdfda4fd224c0f51cb00e388"
+    } ],
+    "uid" : "6f761150966e24ed21c8eb6e6e6386f2"
+  } ]
+}

@@ -1,0 +1,106 @@
+{
+  "uid" : "d2cbb00a93e2809f",
+  "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+  "fullName" : "tests.EventTest.testBasicPistolShootingCourseTickets",
+  "historyId" : "7ecdb10f11dc296a1e142ff76dec507",
+  "time" : {
+    "start" : 1753543272748,
+    "stop" : 1753543288578,
+    "duration" : 15830
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1753543258285,
+      "stop" : 1753543272691,
+      "duration" : 14406
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1753543288587,
+      "stop" : 1753543288669,
+      "duration" : 82
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.EventTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.EventTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testBasicPistolShootingCourseTickets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.EventTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmpptgkbjq6m"
+  }, {
+    "name" : "thread",
+    "value" : "2224@pkrvmpptgkbjq6m.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Check ticket availability across multiple pages"
+  }, {
+    "name" : "feature",
+    "value" : "Tickets availability check"
+  }, {
+    "name" : "epic",
+    "value" : "Course search"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d2cbb00a93e2809f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.EventTest",
+    "children" : [ {
+      "name" : "testBasicPistolShootingCourseTickets",
+      "uid" : "d2cbb00a93e2809f",
+      "parentUid" : "55d81fe24927bf65addd03655c07e8d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1753543272748,
+        "stop" : 1753543288578,
+        "duration" : 15830
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.EventTest"
+  } ]
+}

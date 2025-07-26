@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Course search",
+    "children" : [ {
+      "name" : "Tickets availability check",
+      "children" : [ {
+        "name" : "Check ticket availability across multiple pages",
+        "children" : [ {
+          "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+          "uid" : "d2cbb00a93e2809f",
+          "parentUid" : "7b88d528c5d314233e8242db3320bd3c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1753543272748,
+            "stop" : 1753543288578,
+            "duration" : 15830
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7b88d528c5d314233e8242db3320bd3c"
+      } ],
+      "uid" : "fccad8e72ec3a9419e5a57bd63773d03"
+    } ],
+    "uid" : "425da1e25883ae012579672981a63fc2"
+  } ]
+}

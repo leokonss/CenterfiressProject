@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Surefire suite",
+    "children" : [ {
+      "name" : "Surefire test",
+      "children" : [ {
+        "name" : "tests.EventTest",
+        "children" : [ {
+          "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+          "uid" : "d2cbb00a93e2809f",
+          "parentUid" : "ed8abf76fc8823b6cb0bcd09615101d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1753543272748,
+            "stop" : 1753543288578,
+            "duration" : 15830
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ed8abf76fc8823b6cb0bcd09615101d9"
+      } ],
+      "uid" : "1fcb2e6ec8e5b5e8a1f2a70b87c80b24"
+    } ],
+    "uid" : "940a09faf31371a51747026c9d178f0a"
+  } ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "d2cbb00a93e2809f",
+  "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+  "time" : {
+    "start" : 1753543272748,
+    "stop" : 1753543288578,
+    "duration" : 15830
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]
