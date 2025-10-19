@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "runnervmzdgdc",
+    "children" : [ {
+      "name" : "2172@runnervmzdgdc.main(1)",
+      "children" : [ {
+        "name" : "Verify that tickets are not available for 'Basic Pistol Shooting Course'",
+        "uid" : "64225dfb692de1a",
+        "parentUid" : "7f676b2529c10f469b84e9de0174df5e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1760838281225,
+          "stop" : 1760838281505,
+          "duration" : 280
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7f676b2529c10f469b84e9de0174df5e"
+    } ],
+    "uid" : "4c780df3fd3262a3a2de733cd96fd2a5"
+  } ]
+}
